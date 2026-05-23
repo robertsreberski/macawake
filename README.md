@@ -54,7 +54,7 @@ npm install --global .
 After publishing, install the package globally with:
 
 ```sh
-npm install --global macawake
+npm install --global @robertsreberski/macawake
 ```
 
 Then run:

@@ -1,10 +1,10 @@
 {
-  "name": "macawake",
+  "name": "@robertsreberski/macawake",
   "version": "0.1.0",
   "description": "macOS power profile switcher for default, light, server, and aggressive awake modes.",
   "type": "module",
   "bin": {
-    "macawake": "./bin/macawake.js"
+    "macawake": "bin/macawake.js"
   },
   "files": [
     "bin/",

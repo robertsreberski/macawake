@@ -7,9 +7,9 @@ test("package exposes only the runtime files needed for a global CLI install", a
   const binPath = new URL(`../${packageJson.bin.macawake.replace(/^\.\//, "")}`, import.meta.url);
   const bin = await fs.readFile(binPath, "utf8");
 
-  assert.equal(packageJson.name, "macawake");
+  assert.equal(packageJson.name, "@robertsreberski/macawake");
   assert.equal(packageJson.type, "module");
-  assert.deepEqual(packageJson.bin, { macawake: "./bin/macawake.js" });
+  assert.deepEqual(packageJson.bin, { macawake: "bin/macawake.js" });
   assert.deepEqual(packageJson.files, ["bin/", "src/", "README.md"]);
   assert.match(bin, /^#!\/usr\/bin\/env node\n/);
   await fs.access(new URL("../src/cli.js", import.meta.url));
