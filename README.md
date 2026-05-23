@@ -1,8 +1,6 @@
 # macawake
 
-`macawake` switches this Mac between local power profiles. It does not enable or
-disable SSH, Tailscale, or Tailscale Serve; it only controls whether macOS is
-allowed to sleep.
+`macawake` switches this Mac between local power profiles.
 
 ## Commands
 

@@ -9,6 +9,7 @@ test("package exposes only the runtime files needed for a global CLI install", a
 
   assert.equal(packageJson.name, "@robertsreberski/macawake");
   assert.equal(packageJson.type, "module");
+  assert.equal(packageJson.license, "MIT");
   assert.deepEqual(packageJson.bin, { macawake: "bin/macawake.js" });
   assert.deepEqual(packageJson.files, ["bin/", "src/", "README.md"]);
   assert.match(bin, /^#!\/usr\/bin\/env node\n/);
